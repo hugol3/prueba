@@ -13,8 +13,8 @@
     """,
     # data files always loaded at installation
     'data': [
+        'views/menu.xml',
         'views/inventario.xml',
-        'views/menu.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [],
