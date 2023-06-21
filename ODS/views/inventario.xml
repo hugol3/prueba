@@ -16,6 +16,9 @@
                         <div class="oe_button_box" name="button_box">
                             <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         </div>
+                        <h1>
+                            <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
+                        </h1>
                     </sheet>
                 </form>
             </field>
