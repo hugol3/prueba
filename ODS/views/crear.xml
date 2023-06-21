@@ -3,7 +3,7 @@
     <record id="action_usuario_model" model="ir.actions.act_window">
         <field name="name">Usuarios</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">hospital.patient</field>
+        <field name="res_model">usuario.model</field>
         <field name="view_mode">tree,form</field>
     </record>
 </odoo>
