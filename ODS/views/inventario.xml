@@ -5,13 +5,17 @@
             <field name="name">usuario</field>
             <field name="model">usuario.model</field>
             <field name="arch" type="xml">
-                <form string="Inventario Form">
-                    <group>
-                        <field name="correo"/>
-                        <field name="name"/>
-                    </group>
+                <form string="inventario">
+                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;same_vat_partner_id&quot;, &quot;=&quot;, false]]}">
+                        A partner with the same <span><span class="o_vat_label">Tax ID</span></span> already exists (<field name="same_vat_partner_id" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
+                    </div>
+                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;same_company_registry_partner_id&quot;, &quot;=&quot;, false]]}">
+                        A partner with the same <span><span class="o_vat_label">Company Registry</span></span> already exists (<field name="same_company_registry_partner_id" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
+                    </div>
                 </form>
             </field>
         </record>
     </data>
 </odoo>
+
+
