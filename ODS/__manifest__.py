@@ -16,6 +16,8 @@
     'data': [
         'views/menu.xml',
         'views/inventario.xml',
+        'views/crear.xml',
+        'views/inventario2.xml',
         'views/crear_usuario.xml',
         'views/crear_inventario.xml'
     ],
