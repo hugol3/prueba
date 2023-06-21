@@ -16,6 +16,28 @@
                 </tree>
             </field>
         </record>
+
+        <record id="form_view_articulo" model="ir.ui.view">
+
+        <field name="name">Invetario</field>
+        <field name="model">inventario.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="cantidad"/>
+                        <field name="id"/>
+                        <field name="id_categoria" />
+                        <field name="fecha_recibido" />
+                        <field name="fecha_caducidad" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+
+        </record>
+
     </data>
 </odoo>
 
