@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="action_usuario_model" model="ir.actions.act_window">
+    <record id="action_usuario_model" model="ir.actions.act_window"/>
         <field name="name">Usuarios</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
