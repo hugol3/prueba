@@ -31,6 +31,26 @@
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_ordenes_view"/>
         </record>
+        <record id="action_crear_usuario" model="ir.actions.act_window">
+            <field name="name">Crear Usuario</field>
+            <field name="res_model">usuario.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>     
+        <record id="menu_crear_usuario" model="ir.ui.menu">
+            <field name="name">Crear Usuario</field>
+            <field name="parent_id" ref="menu_mi_modulo"/>
+            <field name="action" ref="action_crear_usuario"/>
+        </record>
+        <record id="action_crear_inventario" model="ir.actions.act_window">
+            <field name="name">Crear Inventario</field>
+            <field name="res_model">inventario.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>     
+        <record id="menu_crear_inventario" model="ir.ui.menu">
+            <field name="name">Crear Inventario</field>
+            <field name="parent_id" ref="menu_mi_modulo"/>
+            <field name="action" ref="action_crear_inventario"/>
+        </record>
     </data>
 
 </odoo>
