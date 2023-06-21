@@ -11,18 +11,6 @@
         </field>
     </record>
 
-    <record id="action_usuario" model="ir.actions.act_window">
-        <field name="name">Usuario</field>
-        <field name="type">ir.action.act_window</field>
-        <field name="res_model">usuario.model</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="o_view_noconten_smiling_face">
-                Create your user
-            </p>
-        </field>
-    </record>
     <menuitem id="usuario_root" name="usuario" sequence="0"/>
 
 </odoo>
