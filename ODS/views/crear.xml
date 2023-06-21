@@ -4,7 +4,7 @@
         <field name="name">usuario.form</field>
         <field name="model">usuario</field> 
         <field name="arch" type="xml">
-            <form string="Patients">
+            <form string="usuario">
                 <field name="name"/>
                 <field name="correo"/>
             </form>
