@@ -21,7 +21,7 @@
                             <field name="fecha_caducidad"/>
                         </group>
                         <group>
-                            <field name="img"/>
+                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         </group>
                     </group>
                 </sheets>
