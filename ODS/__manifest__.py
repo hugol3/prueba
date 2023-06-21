@@ -15,7 +15,6 @@
     # data files always loaded at installation
     'data': [
         'views/menu.xml',
-        'views/bienvenida.xml',
         # CRUD VIEWS
         'views/ordenes_view.xml',
         'views/productos_view.xml',
