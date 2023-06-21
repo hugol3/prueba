@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="sign" inherit_id="auth_signup.fields" name="sign Inherit">
-        <xpath expr="//div[contains(@class, 'form-group field-name')]" position="after">
-            <div><h1>este es un nuevo campo</h1></div>
-        </xpath>
-    </template>
+    <data>
+        <record id="view_inventario_form" model="ir.ui.view">
+            <field name="name">inventario.model.form</field>
+            <field name="model">inventario.model</field>
+        </record>
+    </data>
 </odoo>
