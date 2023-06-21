@@ -3,7 +3,7 @@
     <data>
         <!-- Vista de lista (tree view) -->
         <record id="view_productos_tree" model="ir.ui.view">
-            <field name="name">inventario</field>
+            <field name="name">inventario2</field>
             <field name="model">inventario.model</field>
             <field name="arch" type="xml">
                 <tree>
