@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+
         <!-- Vista de lista (tree view) -->
         <record id="view_beneficiarios_tree" model="ir.ui.view">
             <field name="name">Beneficiarios</field>
@@ -18,5 +18,24 @@
                 </tree>
             </field>
         </record>
-    </data>
+
+        <!-- Vista de lista (tree view) -->
+        <record id="view_beneficiarios_tree" model="ir.ui.view">
+            <field name="name">Nuevo Beneficiario</field>
+            <field name="model">beneficiario.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="id" />
+                            <field name="name" />
+                            <field name="rfc" />
+                            <field name="direccion" />
+                            <field name="correo" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    
 </odoo>

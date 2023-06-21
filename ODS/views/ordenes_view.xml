@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    
         <!-- Vista de lista (tree view) -->
         <record id="view_ordenes_tree" model="ir.ui.view">
             <field name="name">Ordenes Entrega</field>
@@ -18,5 +18,23 @@
                 </tree>
             </field>
         </record>
-    </data>
+
+        <record id="view_producto_form" model="ir.ui.view">
+            <field name="name">Nueva Orden</field>
+            <field name="model">entrega.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="id"/>
+                            <field name="status"/>
+                            <field name="fecha"/>
+                            <field name="id_usuario" />
+                            <field name="id_beneficiario" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
 </odoo>
