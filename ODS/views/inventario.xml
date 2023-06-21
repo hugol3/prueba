@@ -13,7 +13,7 @@
                         <group>
                             <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;nombre&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
                             <field id="individual" class="text-break" name="cantidad" default_focus="1" placeholder="Cantidad" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;cantidad&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                            <field name="id_categoria" widget="many2many_tags"  can_create="true" can_write="true"/>
+                            <field id="individual" name="fecha_recibo"/>
                         </group>
                     </sheet>
                 </form>
