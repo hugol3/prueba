@@ -22,6 +22,7 @@
         #'views/inventario.xml',
         'views/crear_usuario.xml',
         'views/crear_inventario.xml',
+        'views/actualizar.xml',
         #'views/eliminar.xml',
     ],
     # data files containing optionally loaded demonstration data
