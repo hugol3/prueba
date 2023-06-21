@@ -15,7 +15,6 @@ class Inventario(models.Model):
 
     def unlink(self):
         return super(Inventario, self).unlink()
-
     def update(self,id,nombre, fecha_recibido, id_categoria, id_usuario, cantidad, fecha_caducidad):
         Inventario = self.env['inventario.model'].browse(id)
         Inventario.write({
