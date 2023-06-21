@@ -8,7 +8,7 @@
             <form>
                 <sheets>
                     <group>
-                        <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
+                        <field name="img" widget="image" class="oe_avatar"  options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         <group>
                             <field name="nombre"/>
                         </group>
