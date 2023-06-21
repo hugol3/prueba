@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <record id="view_inventario_form" model="ir.ui.view">
-            <field name="name">usuario</field>
-            <field name="model">usuario.model</field>
+            <field name="name">inventario</field>
+            <field name="model">inventario.model</field>
             <field name="arch" type="xml">
                 <form string="inventario">
                     <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;id&quot;, &quot;=&quot;, false]]}">
