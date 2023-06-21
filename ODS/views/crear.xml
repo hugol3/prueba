@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="usuario_form" model="ir.ui.view">
+    <record id="view_usuario_form" model="ir.ui.view">
         <field name="name">usuario</field>
         <field name="model">usuario.model</field> 
         <field name="arch" type="xml">
