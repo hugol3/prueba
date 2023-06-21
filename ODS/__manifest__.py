@@ -16,10 +16,8 @@
     'data': [
         'views/menu.xml',
         'views/inventario.xml',
-        'views/actualizar.xml',
         'views/crear.xml',
         'views/eliminar.xml',
-        'views/leer.xml',
 
 
     ],
