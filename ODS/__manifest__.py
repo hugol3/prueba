@@ -10,7 +10,8 @@
     'category': 'Category',
     'description': """
         Track groceeries to be delivered
-    """,
+    """, 
+    'images' : ['images/image_1920.png'],
     # data files always loaded at installation
     'data': [
         'views/menu.xml',
