@@ -12,7 +12,7 @@
                         </div>
                         <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
                         <xpath expr="//filter[@string='Due Month']" position="after">
-                            <filter string="Past Due" name="fecha_recibido" domain="[('date_due','&lt;',current_date)]" />
+                            <filter string="Past Due" name="fecha_recibido" date_due="[('date_due','&lt;',current_date)]" />
                         </xpath>
                     </sheet>
                 </form>
