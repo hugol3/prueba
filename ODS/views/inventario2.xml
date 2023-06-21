@@ -12,34 +12,6 @@
                 </tree>
             </field>
         </record>
-
-        <!-- Vista de formulario (form view) -->
-        <record id="view_registro_form" model="ir.ui.view">
-            <field name="name">inventario.form</field>
-            <field name="model">inventario.model</field>
-            <field name="arch" type="xml">
-                <form>
-                    <!-- Definir los campos a mostrar en el formulario -->
-                    <sheet>
-                        <group>
-                            <field name="campo1"/>
-                            <field name="campo2"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-
-        <!-- Acción para mostrar la vista de lista -->
-        <record id="action_registro" model="ir.actions.act_window">
-            <field name="name">Registros</field>
-            <field name="res_model">inventario.model</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-
-        <!-- Menú para acceder a la vista de lista -->
-        <menuitem id="menu_registro" name="Registros" parent="your_module.menu_root"/>
-        <menuitem id="menu_registro_list" name="Lista de Registros" parent="menu_registro" action="action_registro"/>
     </data>
 </odoo>
 
