@@ -1,15 +1,25 @@
 <odoo>
     <data>
         <menuitem name="Mi Módulo" id="menu_mi_modulo" sequence="0" action=""/>   
-        <record id="action_my_view" model="ir.actions.act_window">
+        <record id="action_inventario" model="ir.actions.act_window">
             <field name="name">Inventario</field>
             <field name="res_model">inventario.model</field>
             <field name="view_mode">tree,form</field>
         </record>     
-        <record id="menu_my_view" model="ir.ui.menu">
+        <record id="menu_inventario" model="ir.ui.menu">
             <field name="name">Inventario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
-            <field name="action" ref="action_my_view"/>
+            <field name="action" ref="action_inventario"/>
+        </record>
+        <record id="action_beneficiario" model="ir.actions.act_window">
+            <field name="name">Inventario</field>
+            <field name="res_model">beneficiario.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>     
+        <record id="menu_beneficiario" model="ir.ui.menu">
+            <field name="name">Inventario</field>
+            <field name="parent_id" ref="menu_mi_modulo"/>
+            <field name="action" ref="action_beneficiario"/>
         </record>
     </data>
 
