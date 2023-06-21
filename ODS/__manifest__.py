@@ -20,7 +20,7 @@
     'auto_install': False,
     'assets':{
         'web.assets_backend': [
-            'views/src/css/account_bank_and_cash.css',
+           
         ]
     },
 }
