@@ -10,6 +10,7 @@
             <field name="name">Inventario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_inventario"/>
+            <field name="sequence" type="int">0</field>
         </record>
         <record id="action_beneficiario" model="ir.actions.act_window">
             <field name="name">Beneficiario</field>
@@ -20,7 +21,7 @@
             <field name="name">Beneficiario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_beneficiario"/>
-            <field name="sequence">1</field>
+            <field name="sequence" type="int">1</field>
         </record>
         <record id="action_ordenes_view" model="ir.actions.act_window">
             <field name="name">Ordenes</field>
@@ -31,7 +32,7 @@
             <field name="name">Ordenes</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_ordenes_view"/>
-            <field name="sequence">2</field>
+            <field name="sequence" type="int">2</field>
         </record>
         <record id="action_crear_usuario" model="ir.actions.act_window">
             <field name="name">Crear Usuario</field>
@@ -42,7 +43,7 @@
             <field name="name">Crear Usuario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_crear_usuario"/>
-            <field name="sequence">3</field>
+            <field name="sequence" type="int">3</field>
         </record>
         <record id="action_crear_inventario" model="ir.actions.act_window">
             <field name="name">Crear Inventario</field>
@@ -53,7 +54,7 @@
             <field name="name">Crear Inventario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_crear_inventario"/>
-            <field name="sequence">4</field>
+            <field name="sequence" type="int">4</field>
         </record>
     </data>
 
