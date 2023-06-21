@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="view_Inventario_form" model="ir.ui.view">
-            <field name="name">Inventario.view.form</field>
-            <field name="model">Inventario.model</field>
-            <field name="arch" type="xml">
-                <form string="Titulo">
-                    <header>
-                        <button name="nombre_funcion_python" string="text" type="object"/>
-                    </header> 
-                    <field name="status" widget="statusbar" readonly="1"/>
-                </form>  
-            </field>
-        </record>
-    </data>
+    <template id="sign" inherit_id="auth_signup.fields" name="sign Inherit">
+        <xpath expr="//div[class='form-group field-name']" position="after">
+            <div><h1>este es un nuevo campo</h1></div>
+        </xpath>
+    </template>
 </odoo>
