@@ -12,7 +12,7 @@
                     <field name="cantidad" />
                     <field name="id_categoria" />
                     <button name="unlink" string="Eliminar" type="object" class="oe_highlight" confirm="¿Estás seguro de que deseas eliminar el registro?" />
-                    <button name="unlink" string="Editar" type="object"/>
+                    <button name="redireccionar" string="Editar" type="object"/>
                 </tree>
             </field>
         </record>
