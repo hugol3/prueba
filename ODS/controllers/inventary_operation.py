@@ -9,7 +9,7 @@ class MyController(http.Controller):
         # Lógica para crear un nuevo registro
         # Obtener los datos de la solicitud y guardarlos en un nuevo registro
         # Devolver una respuesta adecuada (redirección, mensaje de éxito, etc.)
-        return 
+        return "<h1>Hola Mundo!</h1>"
 
     @http.route('/my_module/registro/<int:id>', auth='user', website=True)
     def read_record(self, id, **kwargs):
