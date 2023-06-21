@@ -11,7 +11,7 @@
                             <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         </div>
                         <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                        <field name="fecha_recibido" eval="DateTime.today().strftime('%Y-%m-%d %H:%M')"/>
+                        <field name="fecha_recibido" placeholder="fecha recibido" domain="[('date_due','&lt;',current_date)]"/>
                     </sheet>
                 </form>
             </field>
