@@ -15,7 +15,6 @@
                     <sheet>
                         <div class="oe_button_box" name="button_box"/>
                             <widget name="web_ribbon" title="Archived" bg_color="bg-danger" modifiers="{&quot;invisible&quot;: [[&quot;active&quot;, &quot;=&quot;, true]]}"/>
-                        </div>
                     </sheet>
                 </form>
             </field>
