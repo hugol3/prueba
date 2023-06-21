@@ -6,11 +6,11 @@ class Inventario(models.Model):
 
     id = fields.Integer()
     nombre = fields.Char()
-    fecha_recibido = fields.text()
+    fecha_recibido = fieldsd.Date()
     id_categoria = fields.Many2one("categoria.model", string="Categoria")
     id_usuario = fields.Many2one("usuario.model", string="Usuario")
     cantidad = fields.Integer()
-    fecha_caducidad = fields.text()
+    fecha_caducidad = fields.Date()
     img = fields.Text()
 
     def unlink(self):

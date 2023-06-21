@@ -17,6 +17,25 @@
             </field>
         </record>
 
+        <record id="view_producto_form" model="ir.ui.view">
+            <field name="name">Nuevo Producto</field>
+            <field name="model">inventario.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="cantidad"/>
+                            <field name="id"/>
+                            <field name="id_categoria" />
+                            <field name="fecha_recibido" />
+                            <field name="fecha_caducidad" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
     </data>
 </odoo>
 
