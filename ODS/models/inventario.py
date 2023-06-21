@@ -13,7 +13,6 @@ class Inventario(models.Model):
     fecha_caducidad = fields.Date()
     img = fields.Text()
 
-    @api.multi
     def unlink(self):
         return super(Inventario, self).unlink()
 
