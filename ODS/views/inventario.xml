@@ -24,8 +24,8 @@
                                 <field name="fecha_recibido" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
                                 <field name="fecha_caducidad" widget="radio" options="{'horizontal': true}" on_change="1"/>
                                 <h1>
-                                    <field id="company" class="text-break" name="name" default_focus="1" placeholder="e.g. Lumber Inc" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, false]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                                    <field id="individual" class="text-break" name="name" default_focus="1" placeholder="e.g. Brandom Freeman" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
+                                    <field id="company" class="text-break" name="nombre" default_focus="1" placeholder="e.g. Lumber Inc" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, false]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
+                                    <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="e.g. Brandom Freeman" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
                                 </h1>
                              </div>
                     </sheet>
