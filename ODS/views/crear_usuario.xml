@@ -11,7 +11,7 @@
     <record model="ir.ui.view" id="usuario_form">
         <field name="name">Usuario</field>
         <field name="model">usuario.model</field>
-        <field name="priority" eval="16"/>
+        <field name="priority" eval="16"/></field>
         <field name="arch" type="xml">
             <form>
                 <sheets>
