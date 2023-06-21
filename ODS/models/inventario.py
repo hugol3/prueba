@@ -15,30 +15,14 @@ class Inventario(models.Model):
 
     def unlink(self):
         return super(Inventario, self).unlink()
-    def update(self,id,nombre, fecha_recibido, id_categoria, id_usuario, cantidad, fecha_caducidad):
-        Inventario = self.env['inventario.model'].browse(id)
-        Inventario.write({
-            'nombre': nombre,
-            'fecha_recibo' : fecha_recibido,
-            'id_categoria' : id_categoria,
-            'id_usuario' : id_usuario,
-            'cantidad' : cantidad,
-            'fecha_caducidad' : fecha_caducidad
-        })
 
-    def create(self,record):
+    def create(self, vals):
         for record in self:
-            if self.id == record.id:
-                super(Inventario, self).unlink()
+            if record.id:
+                record.unlink()
             else:
-                self.env['inventario.model'].create({
-                    'nombre': record.nombre,
-                    'fecha_recibo' : record.fecha_recibido,
-                    'id_categoria' : record.id_categoria,
-                    'id_usuario' : record.id_usuario,
-                    'cantidad' : record.cantidad,
-                    'fecha_caducidad' : record.fecha_caducidad
-                })
+                return super(Inventario, self).create(vals)
+
 
 
         
