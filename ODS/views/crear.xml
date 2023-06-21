@@ -23,6 +23,6 @@
             </p>
         </field>
     </record>
-    <menuitem id="usuario_root" name="Usuario" sequence="0">
-    
+    <menuitem id="usuario_root" name="usuario" sequence="0">
+
 </odoo>
