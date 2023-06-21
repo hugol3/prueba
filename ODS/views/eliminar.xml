@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <!-- Vista de lista (tree view) -->
-        <record id="view_productos_tree" model="ir.ui.view">
-            <field name="name">inventario</field>
+        <record id="view_eliminar_tree" model="ir.ui.view">
+            <field name="name">eliminar</field>
             <field name="model">inventario.model</field>
             <field name="arch" type="xml">
                 <tree>
