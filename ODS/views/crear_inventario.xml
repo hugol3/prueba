@@ -5,7 +5,7 @@
         <field name="model">inventario.model</field>
         <field name="priority" eval="16"/>
         <field name="arch" type="xml">
-            <form>
+            <form class="oe_center">
                 <sheets>
                     <group>
                         <field name="img" widget="image" class="oe_avatar"  options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
