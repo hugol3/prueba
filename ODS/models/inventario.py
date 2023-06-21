@@ -27,7 +27,7 @@ class Inventario(models.Model):
             'fecha_caducidad' : fecha_caducidad
         })
     def redireccionar(self):
-        url = '/web#cids=1&model=inventario.model&view_type=form/1'
+        url = '/web#cids=1&model=inventario.model&view_type=form/'
         return http.request.redirect(url)
 
 
