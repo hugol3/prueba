@@ -3,5 +3,6 @@
         <menuitem name="Mi Módulo" id="menu_mi_modulo" sequence="0" action=""/>        
     </data>
     <menuitem id="menu_inventario_root" name="Inventario" sequence="10"/>
+    <menuitem id="menu_usuarios" name="Usuarios" parent="menu_inventario_root" sequence="10"/>
 </odoo>
 

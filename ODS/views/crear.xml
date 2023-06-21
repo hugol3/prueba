@@ -6,6 +6,10 @@
         <field name="res_model">usuario.model</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+    <menuitem id="menu_usuarios" name="Usuarios" parent="menu_inventario_root" action="action_usuario_model" sequence="10"/>
+
+
 </odoo>
 
 
