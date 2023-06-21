@@ -16,7 +16,8 @@
     'data': [
         'views/menu.xml',
         'views/inventario.xml',
-        'views/crear.xml',
+        'views/crear_usuario.xml',
+        'views/crear_inventario.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [],

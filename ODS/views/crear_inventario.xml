@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="usuario_form">
+        <field name="name">inventario</field>
+        <field name="model">inventario.model</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheets>
+                    <group>
+                        <group>
+                            <field name="nombre"/>
+                        </group>
+                        <group>
+                            <field name="fecha_recibido"/>
+                        </group>
+                        <group>
+                            <field name="cantidad"/>
+                        </group>
+                        <group>
+                            <field name="fecha_caducidad"/>
+                        </group>
+                        <group>
+                            <field name="img"/>
+                        </group>
+                    </group>
+                </sheets>
+            </form>
+        </field>
+    </record>    
+
+</odoo>
+
+
+
