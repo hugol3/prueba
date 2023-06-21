@@ -6,11 +6,10 @@
             <field name="res_model">inventario.model</field>
             <field name="view_mode">tree,form</field>
         </record>     
-        <record id="menu_inventario" model="ir.ui.menu">
+        <record id="menu_inventario" model="ir.ui.menu" sequence="0">
             <field name="name">Inventario</field>
             <field name="parent_id" ref="menu_mi_modulo"/>
             <field name="action" ref="action_inventario"/>
-            <field name="sequence">0</field>
         </record>
         <record id="action_beneficiario" model="ir.actions.act_window">
             <field name="name">Beneficiario</field>
