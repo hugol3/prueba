@@ -2,7 +2,7 @@
     <data>
         <template id="view_welcome_form" inherit_id="web.layout">
             
-                <div class="oe_welcome_page">
+                <div>
                     <h1>Bienvenido a Odoo</h1>
                     <p>Este es un mensaje de bienvenida.</p>
                 </div>
