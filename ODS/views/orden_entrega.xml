@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_inventario_form" model="ir.ui.view">
-            <field name="name">Orden de Entrega</field>
-            <field name="model">inventario.model</field>
+        <!-- Vista de lista (tree view) -->
+        <record id="view_ordenes_tree" model="ir.ui.view">
+            <field name="name">Ordenes Entrega</field>
+            <field name="model">entrega.model</field>
             <field name="arch" type="xml">
-                <form string="inventario">
-                    <sheet>
-                        <div class="oe_button_box" name="button_box">
-                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
-                        </div>
-                        <group>
-                            <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;nombre&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                            <field id="individual" class="text-break" name="cantidad" default_focus="1" placeholder="Cantidad" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;cantidad&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                            <field id="individual" name="fecha_recibido"/>
-                        </group>
-                    </sheet>
-                </form>
+                <tree>
+                    <field name="id" />
+                    <field name="status" />
+                    <field name="fecha" />
+                    <field name="id_usuario" />
+                    <field name="id_beneficiario" >
+                    <button name="unlink" string="Eliminar" type="object" class="oe_highlight" confirm="¿Estás seguro de que deseas eliminar el registro?"/>
+                    <button name="unlink" string="Editar" type="object"/>
+                    <button name="unlink" string="Actualizar" type="object"/>
+                </tree>
             </field>
         </record>
     </data>

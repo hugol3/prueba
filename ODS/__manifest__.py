@@ -15,11 +15,12 @@
     # data files always loaded at installation
     'data': [
         'views/menu.xml',
+        'views/orden_entrega.xml',
         'views/inventario.xml',
         'views/inventario2.xml',
         'views/crear_usuario.xml',
         'views/crear_inventario.xml',
-        'views/eliminar.xml'
+        'views/eliminar.xml',
     ],
     # data files containing optionally loaded demonstration data
     'demo': [],
