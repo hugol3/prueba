@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="sign" inherit_id="auth_signup.fields" name="sign Inherit">
-        <xpath expr="//div[class='form-group field-name']" position="after">
+        <xpath expr="//div[contains(@class, 'form-group field-name')]" position="after">
             <div><h1>este es un nuevo campo</h1></div>
         </xpath>
     </template>
