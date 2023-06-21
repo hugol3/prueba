@@ -15,7 +15,7 @@
                     <sheet>
                         <div class="oe_button_box" name="button_box"/>
                             <widget name="web_ribbon" title="Archived" bg_color="bg-danger" modifiers="{&quot;invisible&quot;: [[&quot;active&quot;, &quot;=&quot;, true]]}"/>
-                            <field name="placeholder" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
+                            <field name="nombre" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                     </sheet>
                 </form>
             </field>
