@@ -1,12 +1,13 @@
 <odoo>
     <data>
         <template id="view_welcome_form" inherit_id="web.layout">
-            
-                <div>
+            <t t-call="web.layout">
+                <t t-set="title">Bienvenido a Odoo</t>
+                <div class="oe_structure">
                     <h1>Bienvenido a Odoo</h1>
                     <p>Este es un mensaje de bienvenida.</p>
                 </div>
-            
+            </t>
         </template>
     </data>
 </odoo>
