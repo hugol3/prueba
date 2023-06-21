@@ -4,9 +4,9 @@ class Usuario(models.Model):
     _name = "usuario.model"
     _description = "Usuario"
 
-
-    name = fields.Char()
+   
     id = fields.Integer()
+    name = fields.Char()
     correo = fields.Text()
     admin = fields.Boolean()
 
