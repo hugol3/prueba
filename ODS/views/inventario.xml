@@ -16,7 +16,6 @@
                             <field name="cantidad" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
                             <field name="id_categoria" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}" placeholder="e.g. &quot;B2B&quot;, &quot;VIP&quot;, &quot;Consulting&quot;, ..." can_create="true" can_write="true"/>
                         </group>
-                    </group>
                     </sheet>
                 </form>
             </field>
