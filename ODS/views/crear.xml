@@ -15,7 +15,6 @@
                     <sheet>
                         <div class="oe_button_box" name="button_box"/>
                             <widget name="web_ribbon" title="Archived" bg_color="bg-danger" modifiers="{&quot;invisible&quot;: [[&quot;active&quot;, &quot;=&quot;, true]]}"/>
-                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                              <div class="oe_title mb24">
                                 <field name="name" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
                                 <field name="id" on_change="1" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
