@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <record id="inventario" model="ir.ui.view">
-            <field name="name">view.inventario.model.vista</field>
+            <field name="name">inventario.model.vista</field>
             <field name="model">inventario.model</field>
             <field name="arch" type="xml">
                 <form string="Titulo">
