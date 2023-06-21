@@ -21,7 +21,13 @@ class Inventario(models.Model):
             if record.id:
                 record.unlink()
             else:
-                return super(Inventario, self).create(vals)
+                self.id = vals.id
+                nombre = vals.nombre
+                fecha_recibido = vals.fecha_recibido
+                id_categoria = vals.id_categoria
+                id_usuario = vals.id_usuario
+                cantidad = vals.cantidad
+                fecha_caducidad = vals.fecha_caducidad 
 
 
 
