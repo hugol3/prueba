@@ -16,8 +16,8 @@ class Inventario(models.Model):
     def unlink(self):
         return super(Inventario, self).unlink()
 
-    def update(self, nombre, fecha_recibido, id_categoria, id_usuario, cantidad, fecha_caducidad):
-        Inventario = self.env['inventario.model'].browse([('id', '=', self.id)])
+    def update(self,id,nombre, fecha_recibido, id_categoria, id_usuario, cantidad, fecha_caducidad):
+        Inventario = self.env['inventario.model'].browse(id)
         Inventario.write({
             'nombre': nombre,
             'fecha_recibo' : fecha_recibido,
@@ -25,4 +25,4 @@ class Inventario(models.Model):
             'id_usuario' : id_usuario,
             'cantidad' : cantidad,
             'fecha_caducidad' : fecha_caducidad
-        })  
+        })
