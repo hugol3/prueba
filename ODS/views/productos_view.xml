@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    
         <!-- Vista de lista (tree view) -->
         <record id="view_productos_tree" model="ir.ui.view">
             <field name="name">productos</field>
@@ -36,7 +36,7 @@
             </field>
         </record>
 
-    </data>
+    
 </odoo>
 
 
