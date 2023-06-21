@@ -1,0 +1,5 @@
+<record id="beneficiario_model_action" model="ir.actions.act_window">
+    <field name="name">Beneficiario action</field>
+    <field name="res_model">beneficiario.model</field>
+    <field name="view_mode">tree,form</field>
+</record>
