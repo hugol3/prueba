@@ -4,32 +4,13 @@
         <record id="view_inventario_form" model="ir.ui.view">
             <field name="name">inventario</field>
             <field name="model">inventario.model</field>
-            <field name="arch" type="xml">
-                <form string="inventario">
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;id&quot;, &quot;=&quot;, false]]}">
-                         A partner with the same <span><span class="o_vat_label">Tax ID</span></span> already exists (<field name="id" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;nombre&quot;, &quot;=&quot;, false]]}">
-                        A partner with the same <span><span class="o_vat_label">Company Registry</span></span> already exists (<field name="nombre" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
-                    <sheet>
-                        <div class="oe_button_box" name="button_box"/>
-                            <widget name="web_ribbon" title="Archived" bg_color="bg-danger" modifiers="{&quot;invisible&quot;: [[&quot;active&quot;, &quot;=&quot;, true]]}"/>
-                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
-                             <div class="oe_title mb24">
-                                <field name="nombre" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
-                                <field name="id" on_change="1" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
-                                <field name="nombre" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
-                                <field name="cantidad" on_change="1" modifiers="{&quot;invisible&quot;: true}" can_create="true" can_write="true"/>
-                                <field name="fecha_recibido" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
-                                <field name="fecha_caducidad" widget="radio" options="{'horizontal': true}" on_change="1"/>
-                                <h1>
-                                    <field id="company" class="text-break" name="nombre" default_focus="1" placeholder="e.g. Lumber Inc" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, false]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                                    <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="e.g. Brandom Freeman" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                                </h1>
-                             </div>
-                    </sheet>
-                </form>
+                <field name="nombre" type="html">
+                    <p class="oe_view_nocontent_create">
+                        reate a Quotation, the first step of a new sale.
+                    </p>
+                    <p>
+                        Once the quotation is confirmed, it becomes a sales order.
+                    </p>
             </field>
         </record>
     </data>
