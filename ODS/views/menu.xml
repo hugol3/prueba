@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <!-- Vista del shortcut -->
+        <record id="view_shortcut_welcome" model="ir.ui.view">
+            <field name="name">Shortcut Welcome</field>
+            <field name="model">ir.actions.act_window</field>
+            <field name="arch" type="xml">
+                <form string="Shortcut Welcome">
+                    <div class="oe_chatter">
+                        <div class="oe_chatter_top">
+                            <h2>Bienvenido(a) al Menú Principal</h2>
+                            <p>Aquí puedes acceder a todas las funcionalidades de la aplicación.</p>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Acción asociada al shortcut -->
+        <record id="action_shortcut_welcome" model="ir.actions.act_window">
+            <field name="name">Welcome Action</field>
+            <field name="res_model">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_shortcut_welcome"/>
+            <field name="target">new</field>
+        </record>
+        
+        <!-- Asociación del shortcut al menú principal -->
+        <menuitem id="menu_shortcut_welcome" name="Welcome Shortcut" parent="main_menu" sequence="10" action="action_shortcut_welcome"/>
+    </data>
+</odoo>
+
