@@ -22,7 +22,7 @@
                                 <group>
                                     <field name="fecha_caducidad"/>
                                 </group>
-                            <div>
+                            </div>
                         </field>
                     </group>
                 </sheets>
