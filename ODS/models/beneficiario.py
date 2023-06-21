@@ -9,5 +9,6 @@ class Beneficiario(models.Model):
     rfc = fields.Text()
     direccion = fields.Text()
     correo = fields.Text()
+    
 
 

@@ -7,5 +7,5 @@ class Orden_entrega(models.Model):
     id = fields.Integer()
     status = fields.Text()
     fecha = fields.Text()
-    id_usuario = fields.Integer()
-    id_beneficiario = fields.Integer()
+    id_usuario = fields.Many2one("usuario.model",string="Usuario")
+    id_beneficiario = fields.Many2one("beneficiario.model",string="Beneficiario")
