@@ -20,7 +20,7 @@
         </record>
 
         <!-- Vista de lista (tree view) -->
-        <record id="view_beneficiarios_tree" model="ir.ui.view">
+        <record id="view_beneficiarios_form" model="ir.ui.view">
             <field name="name">Nuevo Beneficiario</field>
             <field name="model">beneficiario.model</field>
             <field name="arch" type="xml">
