@@ -17,7 +17,6 @@
         'views/menu.xml',
         'views/inventario.xml',
         'views/crear.xml',
-        'views/eliminar.xml',
 
 
     ],
