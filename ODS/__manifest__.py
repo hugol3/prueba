@@ -34,7 +34,6 @@
            
         ]
     },
-    'icon': 'account_dashboard_onboarding_bg.jpg',
     'menu': {
         'name': 'Menu',
         'sequence': 100
