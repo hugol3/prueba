@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <form>
                 <sheets>
-                    <group col="4">
+                    <group>
                         <field name="img" widget="image" class="oe_avatar"  options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         <group>
                             <field name="nombre"/>
