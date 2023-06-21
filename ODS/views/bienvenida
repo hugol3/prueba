@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <template id="welcome_page_template" inherit_id="web.layout">
+            <xpath expr="//div[@class='oe_structure']" position="inside">
+                <div class="oe_welcome_page">
+                    <h1>Bienvenido a Odoo</h1>
+                    <p>Este es un mensaje de bienvenida.</p>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
