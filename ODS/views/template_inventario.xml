@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <!-- Plantilla para mostrar los registros -->
+        <template id="registros_template" inherit_id="website.layout">
+            <div class="container">
+                <h1>Lista de Registros</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo 1</th>
+                            <th>Campo 2</th>
+                            <!-- Agrega más columnas según tus necesidades -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="registros" t-as="registro">
+                            <tr>
+                                <td><t t-esc="registro.nombre"/></td>
+                                <td><t t-esc="registro.cantidad"/></td>
+                                <!-- Agrega más columnas según tus necesidades -->
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+    </data>
+</odoo>
