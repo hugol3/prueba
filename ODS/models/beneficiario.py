@@ -1,6 +1,6 @@
 from odoo import models, fields
 
-class Beneficiario(models.Models):
+class Beneficiario(models.Model):
     _name = "beneficiario.model"
     _description = "Beneficiario"
 
