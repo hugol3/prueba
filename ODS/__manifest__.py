@@ -16,7 +16,7 @@
     'data': [
         'views/menu.xml',
         # CRUD VIEWS
-        'views/orden_entrega.xml',
+        'views/ordenes_view.xml',
         'views/productos_view.xml',
         'views/beneficiarios_view.xml',
         #'views/inventario.xml',
