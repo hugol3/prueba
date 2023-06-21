@@ -26,4 +26,5 @@
            
         ]
     },
+    'icon': 'account_dashboard_onboarding_bg.jpg'
 }
