@@ -9,8 +9,8 @@
                 <tree>
                     <field name="id" />
                     <field name="nombre" />
-                    <field name="cantidad">
-                    <field name="id_categoria">
+                    <field name="cantidad" />
+                    <field name="id_categoria" />
                 </tree>
             </field>
         </record>
