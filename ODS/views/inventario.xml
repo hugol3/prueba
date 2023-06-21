@@ -18,6 +18,11 @@
                             <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                              <div class="oe_title mb24">
                                 <field name="nombre" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
+                                <field name="id" on_change="1" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
+                                <field name="nombre" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
+                                <field name="cantidad" on_change="1" modifiers="{&quot;invisible&quot;: true}" can_create="true" can_write="true"/>
+                                <field name="fecha_recibido" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
+                                <field name="fecha_caducidad" widget="radio" options="{'horizontal': true}" on_change="1"/>
                              </div>
                     </sheet>
                 </form>
