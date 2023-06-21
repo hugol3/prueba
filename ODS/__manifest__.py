@@ -12,7 +12,7 @@
         Track groceeries to be delivered
     """,
     # data files always loaded at installation
-    'data': ['views/prueba.xml'],
+    'data': ['views/inventario.xml'],
     # data files containing optionally loaded demonstration data
     'demo': [],
     'installable': True,

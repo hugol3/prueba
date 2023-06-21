@@ -2,10 +2,14 @@
 <odoo>
     <data>
         <record id="view_inventario_form" model="ir.ui.view">
-            <field name="name">inventario.form</field>
-            <field name="model">inventario</field>
+            <field name="name"></field>
+            <field name="model"></field>
             <field name="arch" type="xml">
                 <form string="Inventario Form">
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
                 </form>
             </field>
         </record>
