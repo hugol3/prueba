@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    
+    <record id="action_usuario" model="ir.actions.act_window">
+        <field name="name">Usuario</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">usuario.model</field>
+        <field name="view mode">tree,form</field>
+    </record>
+
     <record model="ir.ui.view" id="usuario_form">
         <field name="name">Usuario</field>
         <field name="model">usuario.model</field>
@@ -18,7 +26,12 @@
                 </sheets>
             </form>
         </field>
-    </record>    
+    </record>
+
+    <menuitem id="menu_usuarios" name="Usuarios" sequence="10"/>
+
+    
+
 
 
 
