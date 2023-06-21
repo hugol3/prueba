@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="actualizar_inventario_form">
+        <field name="name">actualizar_inventario</field>
+        <field name="model">inventario.model</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheets>
+                    <group>
+                        <field name="img" widget="image" class="oe_avatar"  options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
+                        <group>
+                            <field name="nombre"/>
+                        </group>
+                        <group>
+                            <field name="fecha_recibido"/>
+                        </group>
+                        <group>
+                            <field name="cantidad"/>
+                        </group>
+                        <group>
+                            <field name="fecha_caducidad"/>
+                        </group>
+                    </group>
+                </sheets>
+            </form>
+        </field>
+    </record>    
+
+</odoo>

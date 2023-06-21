@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields,http
 
 class Inventario(models.Model):
     _name = "inventario.model"
@@ -26,5 +26,12 @@ class Inventario(models.Model):
             'cantidad' : cantidad,
             'fecha_caducidad' : fecha_caducidad
         })
+    def redireccionar(self):
+        view_id = self.env.ref('inventario.model.actualizar_inventario').id
+        model = self._name
+        url = '/web#id={}&view_type=form&model={}&action={}'.format(self.id, model, view_id)
+        return http.request.redirect(url)
+
+
 
         
