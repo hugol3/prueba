@@ -6,7 +6,7 @@ class Usuario(models.Model):
 
 
     name = fields.Char()
-    id = fields.Interger()
+    id = fields.Integer()
     correo = fields.Text()
     admin = fields.Boolean()
 
