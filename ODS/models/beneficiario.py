@@ -9,6 +9,9 @@ class Beneficiario(models.Model):
     rfc = fields.Text()
     direccion = fields.Text()
     correo = fields.Text()
+
+    def unlink(self):
+        return super(Beneficiario, self).unlink()
     
 
 

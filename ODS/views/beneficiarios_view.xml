@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vista de lista (tree view) -->
+        <record id="view_beneficiarios_tree" model="ir.ui.view">
+            <field name="name">Beneficiarios</field>
+            <field name="model">id_beneficiario.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id" />
+                    <field name="name" />
+                    <field name="rfc" />
+                    <field name="direccion" />
+                    <field name="correo" />
+                    <button name="unlink" string="Eliminar" type="object" class="oe_highlight" confirm="¿Estás seguro de que deseas eliminar el registro?"/>
+                    <button name="unlink" string="Leer" type="object"/>
+                    <button name="update_entrega" string="Actualizar" type="object"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
