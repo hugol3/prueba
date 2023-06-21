@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>    
-    <data>    
-        <record model="ir.ui.view" id="view_partner_form_inherited">           
-           <field name="name">res.partner.form</field>         
-           <field name="model">res.partner</field> 
-           <field name="inherit_id" ref="base.view_partner_form"/>    
-           <field name="arch" type="xml">        
-             <field name="lang" position="after">  
-                <field name="trn_no"/>        
-             </field>    
-           </field>    
-       </record>   
-   </data>
+<odoo>
+    <data>
+        <record id="prueba" model="ir.ui.views">
+            <field name="name">prueba.model.vista</field>
+            <field name="model">prueba.model</field>
+            <field name="arch" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Create a new sellable product
+                </p>
+            </field>
+        </record>
+    </data>
 </odoo>
