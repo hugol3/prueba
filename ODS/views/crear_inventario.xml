@@ -8,21 +8,21 @@
             <form>
                 <sheets>
                     <group>
-                        <group>
-                            <field name="nombre"/>
-                        </group>
-                        <group>
-                            <field name="fecha_recibido"/>
-                        </group>
-                        <group>
-                            <field name="cantidad"/>
-                        </group>
-                        <group>
-                            <field name="fecha_caducidad"/>
-                        </group>
-                        <group>
-                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
-                        </group>
+                        <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
+                         <div class="oe_title mb24">
+                            <group>
+                                <field name="nombre"/>
+                            </group>
+                            <group>
+                                <field name="fecha_recibido"/>
+                            </group>
+                            <group>
+                                <field name="cantidad"/>
+                            </group>
+                            <group>
+                                <field name="fecha_caducidad"/>
+                            </group>
+                        </field>
                     </group>
                 </sheets>
             </form>
