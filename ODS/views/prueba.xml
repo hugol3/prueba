@@ -5,9 +5,12 @@
             <field name="name">inventario.model.form</field>
             <field name="model">inventario.model</field>
             <field name="arch" type="xml">
-                <field name="name" position="before">
-                    <field name="code" />
-                </field>
+                <form string="Inventario Form">
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
+                </form>
             </field>
         </record>
     </data>
