@@ -9,3 +9,5 @@ class Orden_entrega(models.Model):
     fecha = fields.Text()
     id_usuario = fields.Many2one("usuario.model",string="Usuario")
     id_beneficiario = fields.Many2one("beneficiario.model",string="Beneficiario")
+
+    
