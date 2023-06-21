@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="inventario_view_form" model="ir.ui.view">
+        <record id="view_inventario_form" model="ir.ui.view">
             <field name="name">inventario.view.form</field>
-            <field name="model">inventario.model</field>
+            <field name="model">ODS.inventario.model</field>
             <field name="arch" type="xml">
                 <form string="Titulo">
                     <header>
