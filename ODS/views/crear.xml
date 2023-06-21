@@ -7,6 +7,27 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record model="ir.ui.view" id="usuario_form">
+        <field name="name">Usuario</field>
+        <field name="model">usuario.model</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheets>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="correo"/>
+                        </group>
+                    </group>
+                </sheets>
+            </form>
+        </field>
+    </record>    
+
+
     <menuitem id="menu_usuarios" name="Usuarios" parent="menu_inventario_root" action="action_usuario_model" sequence="10"/>
 
 
