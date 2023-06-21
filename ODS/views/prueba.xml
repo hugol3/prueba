@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="prueba" model="ir.ui.view">
-            <field name="name">prueba.model.vista</field>
-            <field name="model">prueba.model</field>
-            <field name="arch" type="xml">
-                <form string="Titulo">
-                    <header>
-                        <button name="nombre_funcion_python" string="text" type="object">
-                        <field name="status" widget="statusbar" readonly="1"/>
-                    </header> 
-                </form>  
-            </field>
-        </record>
-    </data>
+    <record id="prueba" model="ir.ui.view">
+        <field name="name">prueba.model.vista</field>
+        <field name="model">prueba.model</field>
+        <field name="arch" type="xml">
+            <form string="Titulo">
+                <header>
+                    <button name="nombre_funcion_python" string="text" type="object">
+                    <field name="status" widget="statusbar" readonly="1"/>
+                </header> 
+            </form>  
+        </field>
+    </record>
 </odoo>
