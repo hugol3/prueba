@@ -27,7 +27,7 @@ class Inventario(models.Model):
             'fecha_caducidad' : fecha_caducidad
         })
     def redireccionar(self):
-        view_id = self.env.ref('Mi Modulo.productos').id
+        view_id = self.env.ref('ODS.productos').id
         model = self._name
         url = '/web#id={}&view_type=form&model={}&action={}'.format(self.id, model, view_id)
         return http.request.redirect(url)
