@@ -4,13 +4,13 @@
         <record id="view_inventario_form" model="ir.ui.view">
             <field name="name">inventario</field>
             <field name="model">inventario.model</field>
-                <field name="nombre" type="html">
-                    <p class="oe_view_nocontent_create">
-                        reate a Quotation, the first step of a new sale.
-                    </p>
-                    <p>
-                        Once the quotation is confirmed, it becomes a sales order.
-                    </p>
+            <field name="nombre" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p>
+                <p>
+                    Once the quotation is confirmed, it becomes a sales order.
+                </p>
             </field>
         </record>
     </data>
