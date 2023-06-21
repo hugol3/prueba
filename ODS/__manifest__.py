@@ -11,7 +11,7 @@
     'description': """
         Track groceeries to be delivered
     """, 
-    'images' : ['images/image_1920.png'],
+    'images' : ['images/placeholder.png'],
     # data files always loaded at installation
     'data': [
         'views/menu.xml',

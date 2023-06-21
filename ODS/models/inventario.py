@@ -11,3 +11,4 @@ class Inventario(models.Model):
     id_usuario = fields.Many2one("usuario.model", string="Usuario")
     cantidad = fields.Integer()
     fecha_caducidad = fields.Date()
+    img = fields.Text()
