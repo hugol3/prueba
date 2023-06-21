@@ -4,7 +4,7 @@
         <!-- Vista de lista (tree view) -->
         <record id="view_beneficiarios_tree" model="ir.ui.view">
             <field name="name">Beneficiarios</field>
-            <field name="model">id_beneficiario.model</field>
+            <field name="model">beneficiario.model</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="id" />
