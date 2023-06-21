@@ -6,19 +6,12 @@
             <field name="model">inventario.model</field>
             <field name="arch" type="xml">
                 <form string="inventario">
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;id&quot;, &quot;=&quot;, false]]}">
-                         A partner with the same <span><span class="o_vat_label">Tax ID</span></span> already exists (<field name="id" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;nombre&quot;, &quot;=&quot;, false]]}">
-                        A partner with the same <span><span class="o_vat_label">Company Registry</span></span> already exists (<field name="nombre" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
                             <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         </div>
-                        <h1>
-                            <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                        </h1>
+                        <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
+                        <field name="fecha_recibo" options="{'format': 'DD/MM/YYYY'}"/>
                     </sheet>
                 </form>
             </field>
