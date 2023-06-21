@@ -12,10 +12,15 @@
         Track groceeries to be delivered
     """,
     # data files always loaded at installation
-    'data': [],
+    'data': ['views/prueba.xml'],
     # data files containing optionally loaded demonstration data
     'demo': [],
     'installable': True,
     'application': True,
-    'auto_install': False
+    'auto_install': False,
+    'assets':{
+        'web.assets_backend': [
+            'views/src/css/account_bank_and_cash.css',
+        ]
+    },
 }
