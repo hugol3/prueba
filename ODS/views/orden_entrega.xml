@@ -13,8 +13,8 @@
                     <field name="id_usuario" />
                     <field name="id_beneficiario" >
                     <button name="unlink" string="Eliminar" type="object" class="oe_highlight" confirm="¿Estás seguro de que deseas eliminar el registro?"/>
-                    <button name="unlink" string="Editar" type="object"/>
-                    <button name="unlink" string="Actualizar" type="object"/>
+                    <button string="Editar" type="object"/>
+                    <button string="Actualizar" type="object"/>
                 </tree>
             </field>
         </record>
