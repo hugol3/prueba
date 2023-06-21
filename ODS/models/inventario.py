@@ -17,17 +17,19 @@ class Inventario(models.Model):
         return super(Inventario, self).unlink()
 
     def create(self, vals):
-        for record in self:
-            if record.id:
-                record.unlink()
-            else:
-                self.id = vals.id
-                nombre = vals.nombre
-                fecha_recibido = vals.fecha_recibido
-                id_categoria = vals.id_categoria
-                id_usuario = vals.id_usuario
-                cantidad = vals.cantidad
-                fecha_caducidad = vals.fecha_caducidad 
+        if vals.get('id'):
+            self.browse(vals['id']).unlink()
+        else:
+            self.create({
+                'id': vals.get('id', False),
+                'nombre': vals.get('nombre', False),
+                'fecha_recibido': vals.get('fecha_recibido', False),
+                'id_categoria': vals.get('id_categoria', False),
+                'id_usuario': vals.get('id_usuario', False),
+                'cantidad': vals.get('cantidad', False),
+                'fecha_caducidad': vals.get('fecha_caducidad', False),
+            })
+
 
 
 
