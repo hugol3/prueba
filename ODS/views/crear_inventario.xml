@@ -22,7 +22,7 @@
                             <field name="fecha_caducidad"/>
                         </group>
                         <group>
-                            <button name="update" string="Agregar" type="object" class="oe_highlight" icon="fa-plus" style="backgroung: blue;"/>
+                            <button name="update" string="Agregar" type="object" class="oe_highlight" icon="fa-plus" style="background: blue;"/>
                         </group>
                     </group>
                 </sheets>
