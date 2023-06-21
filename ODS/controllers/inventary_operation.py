@@ -4,7 +4,7 @@ from odoo.http import request
 
 class MyController(http.Controller):
 
-    @http.route('/my_module/registro', auth='user', website=True)
+    @http.route('/web#cids=1&model=inventario.model&view_type=form/<int:id>', auth='user', website=True)
     def create_record(self, **kwargs):
         # Lógica para crear un nuevo registro
         # Obtener los datos de la solicitud y guardarlos en un nuevo registro

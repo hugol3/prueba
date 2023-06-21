@@ -27,9 +27,9 @@ class Inventario(models.Model):
             'fecha_caducidad' : fecha_caducidad
         })
     def redireccionar(self):
-        view_id = self.env.ref('Mi Modulo.actualizar_inventario').id
+        view_id = self.env.ref('ODS.actualizar_inventario').id
         model = self._name
-        url = '/web#cids=1&model=inventario.model&view_type=form'
+        url = '/web#cids=1&model=inventario.model&view_type=form/%s' % (self.id)
         return http.request.redirect(url)
 
 
