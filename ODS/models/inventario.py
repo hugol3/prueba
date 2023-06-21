@@ -25,10 +25,20 @@ class Inventario(models.Model):
             'cantidad' : cantidad,
             'fecha_caducidad' : fecha_caducidad
         })
-    def redireccionar(self):
-        url = '/web#cids=1&model=inventario.model&view_type=form/'
-        return http.request.redirect(url)
 
+    def create(self,record):
+        for record in self:
+            if self.id == record.id:
+                super(Inventario, self).unlink()
+            else:
+                self.env['inventario.model'].create({
+                    'nombre': record.nombre,
+                    'fecha_recibo' : record.fecha_recibido,
+                    'id_categoria' : record.id_categoria,
+                    'id_usuario' : record.id_usuario,
+                    'cantidad' : record.cantidad,
+                    'fecha_caducidad' : record.fecha_caducidad
+                })
 
 
         
