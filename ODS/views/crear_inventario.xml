@@ -21,6 +21,9 @@
                         <group>
                             <field name="fecha_caducidad"/>
                         </group>
+                        <group>
+                            <button name="update" string="Mi botón" type="object" class="oe_highlight"/>
+                        </group>
                     </group>
                 </sheets>
             </form>
