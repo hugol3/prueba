@@ -14,7 +14,7 @@
                     <field name="correo" />
                     <button name="unlink" string="Eliminar" type="object" class="oe_highlight" confirm="¿Estás seguro de que deseas eliminar el registro?"/>
                     <button name="unlink" string="Leer" type="object"/>
-                    <button name="update_entrega" string="Actualizar" type="object"/>
+                    <button name="unlink" string="Actualizar" type="object"/>
                 </tree>
             </field>
         </record>
