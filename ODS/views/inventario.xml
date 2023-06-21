@@ -10,10 +10,13 @@
                         <div class="oe_button_box" name="button_box">
                             <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
                         </div>
-                        <field id="individual" class="text-break" name="nombre" default_focus="1" placeholder="Nombre" on_change="1" modifiers="{&quot;invisible&quot;: [[&quot;is_company&quot;, &quot;=&quot;, true]], &quot;required&quot;: [[&quot;type&quot;, &quot;=&quot;, &quot;contact&quot;]]}"/>
-                        <xpath expr="//filter[@string='Due Month']" position="after">
-                            <filter string="Past Due" name="fecha_recibido" date_due="[('date_due','&lt;',current_date)]" />
-                        </xpath>
+                        <group>
+                            <field name="nombre" widget="phone"/>
+                            <field name="id_usuario" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
+                            <field name="cantidad" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
+                            <field name="id_categoria" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}" placeholder="e.g. &quot;B2B&quot;, &quot;VIP&quot;, &quot;Consulting&quot;, ..." can_create="true" can_write="true"/>
+                        </group>
+                    </group>
                     </sheet>
                 </form>
             </field>
