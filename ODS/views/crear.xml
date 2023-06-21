@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="view_usuario_form" model="ir.ui.view">
-            <field name="name">usuario</field>
-            <field name="model">usuario.model</field>
-            <field name="arch" type="xml">
-                <form string="inventario">
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;id&quot;, &quot;=&quot;, false]]}">
-                         A partner with the same <span><span class="o_vat_label">Tax ID</span></span> already exists (<field name="id" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
-                    <div class="alert alert-warning oe_edit_only" role="alert" modifiers="{&quot;invisible&quot;: [[&quot;nombre&quot;, &quot;=&quot;, false]]}">
-                        A partner with the same <span><span class="o_vat_label">Company Registry</span></span> already exists (<field name="nombre" modifiers="{&quot;readonly&quot;: true}"/>), are you sure to create a new one?
-                    </div>
-                    <sheet>
-                        <div class="oe_button_box" name="button_box"/>
-                            <widget name="web_ribbon" title="Archived" bg_color="bg-danger" modifiers="{&quot;invisible&quot;: [[&quot;active&quot;, &quot;=&quot;, true]]}"/>
-                            <field name="img" widget="image" class="oe_avatar" options="{&quot;placeholder&quot;: &quot;avatar_128&quot;}" on_change="1"/>
-                             <div class="oe_title mb24">
-                                <field name="name" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
-                                <field name="id" on_change="1" modifiers="{&quot;invisible&quot;: true, &quot;readonly&quot;: true}"/>
-                                <field name="correo" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
-                             </div>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-    </data>
+    <record id="action_usuario_model" model="ir.actions.act_window">
+        <field name="name">Usuarios</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">tree,form</field>
 </odoo>
 
 
