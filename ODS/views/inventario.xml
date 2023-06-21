@@ -7,7 +7,7 @@
             <field name="arch" type="xml">
                 <form string="Inventario Form">
                     <group>
-                        <field name="code"/>
+                        <field name="correo"/>
                         <field name="name"/>
                     </group>
                 </form>
