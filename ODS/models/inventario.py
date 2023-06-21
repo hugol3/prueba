@@ -26,3 +26,5 @@ class Inventario(models.Model):
             'cantidad' : cantidad,
             'fecha_caducidad' : fecha_caducidad
         })
+    def eliminate(self):
+        print("hola")

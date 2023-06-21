@@ -18,7 +18,8 @@
         'views/inventario.xml',
         'views/inventario2.xml',
         'views/crear_usuario.xml',
-        'views/crear_inventario.xml'
+        'views/crear_inventario.xml',
+        'views/eliminar.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [],

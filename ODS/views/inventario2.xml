@@ -11,6 +11,7 @@
                     <field name="nombre" />
                     <field name="cantidad" />
                     <field name="id_categoria" />
+                    <button name="eliminate" string="Botón" type="object"/>
                 </tree>
             </field>
         </record>
