@@ -1,2 +1,2 @@
-from . import portal
-from . import project_sharing_chatter
+from . import inventary_operation
+from . import places_operation
