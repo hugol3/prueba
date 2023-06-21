@@ -23,9 +23,9 @@
 
     <record id="action_usuario" model="ir.actions.act_window">
         <field name="name">Usuario</field>
-        <field name="name">ir.actions.act_window</field>
-        <field name="name">usuario.model</field>
-        <field name="name">tree,form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">usuario.model</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="menu_usuarios" name="id" sequence="10"/>
