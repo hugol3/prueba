@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <record id="view_inventario_form" model="ir.ui.view">
-            <field name="name"></field>
-            <field name="model"></field>
+            <field name="name">usuario</field>
+            <field name="res_model">usuario.model</field>
             <field name="arch" type="xml">
                 <form string="Inventario Form">
                     <group>
