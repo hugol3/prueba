@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vista de lista (tree view) -->
+        <record id="view_productos_tree" model="ir.ui.view">
+            <field name="name">inventario</field>
+            <field name="model">inventario.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id" />
+                    <field name="nombre" />
+                    <field name="cantidad" />
+                    <field name="id_categoria" />
+                    <button name="eliminate" string="Botón" type="object"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
