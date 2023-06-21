@@ -17,8 +17,6 @@
         'views/menu.xml',
         'views/inventario.xml',
         'views/crear.xml',
-
-
     ],
     # data files containing optionally loaded demonstration data
     'demo': [],
